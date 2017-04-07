@@ -12,7 +12,7 @@ function sum(a,b){ //eslint-disable-line
   var sumInts = a + b;
   var answerSetSum = [sumInts, 'The sum of ' + a + ' and ' + b + ' is ' + sumInts+'.'];
   return answerSetSum;
-  
+
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -79,7 +79,7 @@ var sumArrayInts = 0;
 function sumArray(testArray){ //eslint-disable-line
 
   for ( var i = 0; i < testArray.length; i++) {
-    sumArrayInts = sumArrayInts + testArray[i];
+    sumArrayInts = sum( sumArrayInts , testArray[i])[0];
   }
 
   var answerSetSumArray = [sumArrayInts, testArray + ' was passed in as an array of numbers, and ' + sumArrayInts + ' is their sum.'];
