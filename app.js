@@ -10,7 +10,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a,b){ //eslint-disable-line
 
 var sumInts = a + b;
-var answerSetSum = [sumInts, ('The sum of ' + a + ' and ' + b + ' is ' + sumInts+'.')];
+var answerSetSum = [sumInts, 'The sum of ' + a + ' and ' + b + ' is ' + sumInts+'.'];
 return answerSetSum;
 
 }
@@ -31,7 +31,7 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a,b){ //eslint-disable-line
 
   var prodInts = a * b;
-  var answerSetProd = [prodInts, ('The product of ' + a + ' and ' + b + ' is ' + prodInts+'.')];
+  var answerSetProd = [prodInts, 'The product of ' + a + ' and ' + b + ' is ' + prodInts+'.'];
   return answerSetProd;
 
 }
@@ -53,10 +53,15 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
 
+  var sumInts = a + b + c;
+  var prodInts = a * b * c;
+  var answerSetSumProd = [sumInts, prodInts, (a + ' and ' + b + ' and ' + c + ' sum to ' + sumInts + '.'), ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + prodInts + '.')];
+  return answerSetSumProd;
+
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
