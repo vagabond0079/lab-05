@@ -53,8 +53,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
 
-  var sumInts = a + b + c;
-  var prodInts = a * b * c;
+  var sumInts = sum(a,(sum(b,c)[0]))[0];
+  var prodInts = multiply(a,(multiply(b,c)[0]))[0];
   var answerSetSumProd = [sumInts, prodInts, (a + ' and ' + b + ' and ' + c + ' sum to ' + sumInts + '.'), ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + prodInts + '.')];
   return answerSetSumProd;
 
